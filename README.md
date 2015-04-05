@@ -27,5 +27,7 @@ If you return true in this function, it will act as a "break".
 ```js
 var spiral = require('spiralloop');
 
-spiral([
+spiral([3, 3], function(x, y) {
+	console.log(x + ', ' + y);
+});
 ```
