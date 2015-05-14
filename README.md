@@ -3,7 +3,7 @@ Ever wanted to do a for loop starting from the center instead of a corner? Now y
 
 # Install
 ```js
-npm install spiralloop
+npm install --save spiralloop
 ```
 
 # Usage
