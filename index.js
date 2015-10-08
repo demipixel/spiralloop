@@ -40,20 +40,10 @@ function spiralLoop(len, cur, center, arr) {
 function distFromCenter(center, cur) {
 	var total = 0;
 	for (var i = 0; i < center.length; i++) {
-		var val = Math.abs(parseInt(center[i]) - parseInt(cur[i]));
+		var val = center[i] - cur[i];
 		total += val*val;
 	}
-	return root(total);
-}
-	
-function root(a) {
-  var epsilon = 0.000001;
-  var guess = a / 2;
-  while (Math.abs(guess * guess - a) > epsilon) {
-    var r = a / guess;
-    guess = (guess + r) / 2;
-  }
-  return guess;
+	return Math.sqrt(total);
 }
 
 module.exports = Spiral;
