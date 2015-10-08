@@ -1,6 +1,6 @@
 {
   "name": "spiralloop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create for loops that spiral from the center or a given point",
   "main": "index.js",
   "scripts": {
